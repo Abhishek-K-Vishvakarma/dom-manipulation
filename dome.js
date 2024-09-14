@@ -17,4 +17,9 @@ h2.innerText = "Abhishek is a Front-End Developer!";
 
 document.querySelector("body").append(h2);
 h2.style.color = 'red'
-h2.style.backgroundColor = 'blue'
+h2.style.backgroundColor = 'blue';
+
+// How to Remove element from dom structure...
+
+// Use this code for removing dom element : h2.remove();
+
