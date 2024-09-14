@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Fragment DOM</title>
+  <style>
+    .scroll {
+      width: 400px;
+      height: 400px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    body{
+      background-color: #302f2f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Framnetation of DOM :)</h1>
-  <input type="text" id="inp">
-  <ul id="list">
-  </ul>
-  <button onclick="Fragmention()">Fragment In!</button>
+  <div class="scroll">
+    <div class="card text-center m-auto mt-3 bg-secondary" style="width: 22rem; padding: 10px; height: auto; box-shadow: -8px 8px 5px rgb(60, 60, 247) ">
+      <h1 style="background-color: lightseagreen; color: khaki;">TO DO LIST</h1>
+      <input type="text" id="inp">
+      <ul id="list">
+      </ul>
+      <button onclick="Fragmention()"
+        style="cursor: pointer; width: 90px; background-color: cadetblue; border: none; box-shadow: -2px 2px 5px yellow; font-size: 20px; color: blue;">Add
+        List</button>
+    </div>
+  </div>
+
   <script src="fragment.js"></script>
 </body>
+
 </html>
