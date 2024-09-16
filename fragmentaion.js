@@ -6,7 +6,6 @@ let li = document.createElement("li");
 ul.appendChild(li);
 section.appendChild(ul);
 fragment.appendChild(section);
-
 document.querySelector("body").append(fragment);
 
 let btn = document.createElement("button");
